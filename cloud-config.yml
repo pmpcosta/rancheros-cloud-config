@@ -4,7 +4,7 @@ ssh_authorized_keys:
 hostname: rancherone
 rancher:
   modules:
-  - btrfs
+    - btrfs
   console: centos
   network:
     interfaces:
