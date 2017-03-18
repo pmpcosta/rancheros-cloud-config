@@ -1,0 +1,12 @@
+#cloud-config
+ssh_authorized_keys:
+- ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDHc8TM6EcuW5CFUC8wqz5KKOrb3VC//JncANnywpFEZ0HSy3AX9Zd2w9Hh5obapjzuVBqb/cmMsAiL1dPj9kldAFrGRcSnuPYVt/VYW/Z3+f53fEDIwbwgFeJ5olshQIdkr6DzPlW1C95ATMGmP8qDuovsdMDQmqp2DWJXN272pqsiTRN2OEgDqnr3rJCPdK80OxRWprX/NjWn4DZzyQPQ5VPjPCLB5TdQx/aEtxkmPTZ+LvfimeJSQ+cSCzBw8+ag95p6IrgVeRNHHSyTU8uP8JldRcMar8gSQLh6OymcjT72IBp6jxQsm8OFUfjtaDqWwMp065fyHikqtr3E+kwmEt0FifTc0OVzlofFypmhJmFQtjaPLpaqxkJi8bqZV5R4BNA3dM+zh5lqVJ1egMpNq4OYfsvyYV3zCRXSHn8BD0IuSDNXXx7TqFdpxNIoZlxqZeHM6OVSWkkFReqBuNMlXaIpEEiNHca7pGXz4pZLgcdPpGY7+h1zfIXILlWusGUAX+qSWST73tuE+OSI+HawNGXEqA3+1rfieq+g5x1J+r4LL1977/LDWewtE+xCeUcGqVHTULC7XbG3I+YBBqT8soJmUhDmHbdoL4X50BdU1DabqcO3GicnfFJglFqLadq31aCQTANj4THHub+t9SHX0KpZeqn9D9FzM6JyixtzJw==
+hostname: rancherone
+rancher:
+  modules:
+  - btrfs
+  console: centos
+  network:
+    interfaces:
+      eth*:
+        dhcp: true
